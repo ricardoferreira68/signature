@@ -1,0 +1,20 @@
+site_name: Signature - Backend
+repo_url: https://gitlab.com/jrsf68/signature-backend
+repo_name: jrsf68/signature-backend
+repo_uri: tree/main/docs
+
+theme:
+  name: material
+  language: pt-BR
+  logo: assets/icone_gestao_de_ensino_superior.png
+  favicon: assets/icone_gestao_de_ensino_superior.png
+
+markdown_extensions: 
+  - attr_list
+
+plugins: 
+  mkdocstrings:
+    handlers:
+      python:
+        paths: [signature-backend/application/use_cases]
+
